@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "969868247887",
+    "firebase_url": "https://edunomics-fb2b1.firebaseio.com",
+    "project_id": "edunomics-fb2b1",
+    "storage_bucket": "edunomics-fb2b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969868247887:android:fec1e4e6becb90974d3b3a",
+        "android_client_info": {
+          "package_name": "com.ksquarej.edunomics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969868247887-n6cf4q4piet40qv4en3chqc669c215qu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ksquarej.edunomics",
+            "certificate_hash": "86f657a1755b9f1f8fd592b6486231fb00f08e70"
+          }
+        },
+        {
+          "client_id": "969868247887-q5ld297bb2gua2mjuvv0fi0hjd29tn9o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADgId8WdIwghX-tTkdsETNEhenca6H6fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969868247887-q5ld297bb2gua2mjuvv0fi0hjd29tn9o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

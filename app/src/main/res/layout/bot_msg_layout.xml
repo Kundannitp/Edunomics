@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bot_ImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/bot"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorAccent"
+        />
+
+    <LinearLayout
+        android:id="@+id/botMsgLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_toRightOf="@+id/bot_ImageView"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bot_bg_bubble"
+        android:gravity="start|center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/dot_2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@color/white"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/colorAccent"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/dot_3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/colorAccent"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/dot_1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@color/white"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/colorAccent"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chatMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:padding="12dp"
+            android:layout_marginLeft="10dp"
+            android:text="abcdefgh"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>

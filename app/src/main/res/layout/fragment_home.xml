@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+    android:scrollbars="vertical" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WELCOME \n TO THE \n WORLD OF \n EDUNOMICS"
+        android:textSize="50sp"
+        android:textColor="#000000"
+        android:layout_marginTop="120dp"
+        android:paddingLeft="31dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/search_career_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        >
+
+    <AutoCompleteTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_career"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="How to get a career?"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginTop="60dp" />
+
+    <AutoCompleteTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_skills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="How to Learn a Skill?"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="61dp"
+        android:visibility="gone"
+        android:layout_marginTop="60dp" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_below="@+id/search_career_layout"
+        android:id="@+id/search_button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_search"
+        android:background="@drawable/search_btn_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/select_btn_relative"
+        android:layout_below="@id/search_button"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/career_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Career"
+            android:background="@drawable/active_btn_background"
+            android:textColor="#FAF8F8"
+            android:textSize="31sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="31dp"
+            android:paddingRight="20dp"
+            />
+        <Button
+            android:id="@+id/skills_btn"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:text="skill"
+            android:background="@drawable/unactive_btn_background"
+            android:textColor="#FAF8F8"
+            android:textSize="31sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/static_img"
+        android:layout_below="@+id/select_btn_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/mainpagetop"
+        />
+
+    <TextView
+        android:id="@+id/about_edu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/static_img"
+        android:text="    ABOUT EDUNOMICS"
+        android:textSize="40sp"
+        android:layout_marginLeft="31dp"
+        android:textColor="#000000"
+        android:layout_marginTop="90dp"
+        android:paddingLeft="31dp"
+        />
+
+    <ImageView
+        android:id="@+id/static_img1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/about_edu"
+        android:src="@drawable/eduno"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We are an ed-tech platform with a vision to impact education and economy by offering training through industry experts. We are out on our way to catalyze change and bridge the gap between educational and industrial worlds. We firmly believe in quality education which is why we bring the talent of the industry to give you insights into what’s happening in the outside world. Here, we provide you with an opportunity to learn online from industry experts on a great number of topics and technologies."
+        android:layout_below="@+id/static_img1"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="100dp"
+        />
+
+</RelativeLayout>
+</ScrollView>

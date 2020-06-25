@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+    android:scrollbars="vertical" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/top1"
+            android:layout_width="match_parent"
+            android:layout_height="770dp"
+            android:src="@drawable/item5"
+            />
+
+        <RelativeLayout
+            android:id="@+id/select_btn_relative"
+            android:layout_below="@id/top1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/career_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Know More?"
+                android:background="@drawable/pink_btn_bg"
+                android:textColor="#FAF8F8"
+                android:textSize="21sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingRight="20dp"
+                />
+            <Button
+                android:id="@+id/skills_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="Apply Now"
+                android:background="@drawable/green_btn_bg"
+                android:textColor="#FAF8F8"
+                android:textSize="21sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

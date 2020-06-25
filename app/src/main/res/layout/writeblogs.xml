@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:background="@drawable/custom_dialog_round_corner"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/blog_profile_pic"
+        android:src="@drawable/man"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#7A7676"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anonymous Name"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:id="@+id/personname"
+
+            ></TextView>
+
+        <ImageButton
+            android:id="@+id/ib_close"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="120dp"
+            android:background="@null"
+            android:src="@drawable/ic_close_black_24dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+        <EditText
+            android:id="@+id/blog_data"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:hint="Write your blog here..."
+            android:inputType="text|textMultiLine"
+            android:background="#D5949292"
+            android:gravity="top"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:text="Post"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/post"
+
+            >
+
+        </Button>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
