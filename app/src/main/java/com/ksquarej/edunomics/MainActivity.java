@@ -241,8 +241,8 @@ public class MainActivity extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email=loginemail.getText().toString();
-                String psw=loginpsw.getText().toString();
+                String email=loginemail.getText().toString().trim();
+                String psw=loginpsw.getText().toString().trim();
                 try {
                     mAuth.signInWithEmailAndPassword(email, psw)
                             .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
@@ -287,8 +287,8 @@ public class MainActivity extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email=loginemail.getText().toString();
-                String psw=loginpsw.getText().toString();
+                String email=loginemail.getText().toString().trim();
+                String psw=loginpsw.getText().toString().trim();
 
                 mAuth.createUserWithEmailAndPassword(email, psw)
                         .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
